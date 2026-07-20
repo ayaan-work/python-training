@@ -10,17 +10,17 @@ print(dq)
 dq.appendleft(5)
 print(dq)
 
-dq.pop()
+dq.pop()     #element from right gets popped
 print(dq)
 
 dq.popleft()
 print(dq)
 
 dq = deque([1, 2, 3, 4])
-dq.rotate(1)
+dq.rotate(1)                 #right rotation
 print(dq)
 
-dq.rotate(-2)
+dq.rotate(-2)            #left rotation
 print(dq)
 
 dq = deque(maxlen=3)
@@ -28,5 +28,5 @@ dq.append(1)
 dq.append(2)
 dq.append(3)
 print(dq)
-dq.append(4)
+dq.append(4)  #will not exceed maxlen and if new element is added prev element is deleted from left
 print(dq)
